@@ -1,0 +1,16 @@
+.navbar {
+    background-color: #081F38;
+}
+
+.container h1,
+.navbar-collapse a {
+    color: #fff;
+}
+
+.carousel-item img {
+    height: 850px;
+}
+
+.tab-content img {
+    height: 350px;
+}
