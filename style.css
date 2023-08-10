@@ -14,3 +14,13 @@
 .tab-content img {
     height: 350px;
 }
+
+.text-color {
+    color: #081F38 ;
+}
+
+#sobre-mim,
+#Procedimentos,
+#serviços {
+    background-color: #d5dee7;
+}
