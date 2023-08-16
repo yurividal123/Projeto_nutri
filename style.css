@@ -7,20 +7,74 @@
     color: #fff;
 }
 
+.text-hover:hover {
+    color: #c6d3e2;
+}
+
+header .navbar-toggler {
+    background-color: #fff;
+
+}
+
+.navbar-brand, .nav-item a i {
+    font-family: 'Merriweather', serif;
+}
+
 .carousel-item img {
-    height: 850px;
+    height: 800px;
 }
 
 .tab-content img {
     height: 350px;
 }
 
+
+.font-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-text2 {
+    font-family: 'Libre Baskerville', serif;
+}
+
 .text-color {
     color: #081F38 ;
 }
 
+#inicio,
 #sobre-mim,
 #Procedimentos,
 #serviços {
     background-color: #d5dee7;
+}
+
+.nav-Procedimentos button {
+    background-color: #d5dee7;
+    color: #081F38;
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+.social-link li {
+    list-style: none;
+    display: inline;
+}
+
+.social-link li a {
+    text-decoration: none;
+}
+
+.social-link i {
+    color: #081F38;
+}
+
+#consulta button {
+    background-color: #081F38;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
 }

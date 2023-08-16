@@ -4,44 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-4">
+    <header class="navbar navbar-expand-lg sticky-top p-4" id-="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand m-0 section-titel">Leticia Assunção <br/>Nutricionista</h1>
-            <nav class="navbar-collapse collapse justify-content-end">
+            <h1 class="navbar-brand m-0 section-titel"><span class="font-text2">Leticia Assunção</span> <br/><span class="font-text2">Nutricionista</span></h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
-                    <li class="nav-item fw-bold">
-                        <a href="#inicio" class="nav-link">
-                            <i class="bi bi-house-heart"></i>
-                            Inicio
-                        </a>
-                    </li>
-                    <li class="nav-item fw-bold">
+                    <li class="nav-item fw-bold text-hover">
                         <a href="#sobre-mim" class="nav-link">
                             <i class="bi bi-file-person-fill"></i>
-                            Sobre mim
+                            <span class="font-text2">Sobre mim</span>
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#serviços" class="nav-link">
+                        <a href="#servicos" class="nav-link">
                             <i class="bi bi-layout-text-sidebar"></i>
-                            Serviços
+                            <span class="font-text2">Serviços</span>
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
                         <a href="#Procedimentos" class="nav-link">
                             <i class="bi bi-pen"></i>
-                            Procedimentos
+                            <span class="font-text2">Procedimentos</span>
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">
+                        <a href="#consulta" class="nav-link">
                             <i class="bi bi-rocket-takeoff"></i>
-                            faça sua consulta 
+                            <span class="font-text2">Marque sua consulta</span>
                         </a>
                     </li>
                 </ul>
@@ -49,17 +52,17 @@
         </div>
     </header>
     <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
-        <section id="inicio">
+        <section id="sobre-mim">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="./img/istockphoto-1130894421-1024x1024.jpg" class="w-100" alt="sementes">
+                        <img src="./img/foto1.jpg" class="w-100" alt="sementes">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./img/istockphoto-1340577567-1024x1024.jpg" class="w-100" alt="receita">
+                        <img src="./img/foto2.jpg" class="w-100" alt="receita">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./img/istockphoto-692515940-1024x1024.jpg" class="w-100" alt="legumes">
+                        <img src="./img/foto3.jpg" class="w-100" alt="legumes">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -74,23 +77,25 @@
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                 </div>
             </div>
-        </section>
-        <section id="sobre-mim">
             <div class="pt-5 pb-5">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-5 mt-md-3">
                             <img src="./img/woman-5591780_1280.jpg" class="d-block w-100 rounded" alt="nutricionista">
                         </div>
-                        <div class="col-md-7">
-                            <h2><span class="text-color">nutricionista</span></h2>
-                            <p>Olá, gostaria de parabenizar-lo(a) pela sua escolha,<br/> será um prazer têlo(a) no meu time. <br/><br/> Sou Leticia Assunção nutricionista. Atuo como nutricionista<br/> esportiva a três anos, e ao longo desses anos já consegui <br/> ajudar mais de 1000 pacientes.<br/><br/>Abaixo preparei um descrição sobre o nosso atendimento. </p>
+                        <div class="col-md-7 mt-3">
+                            <h2><span class="text-color font-text2">Nutricionista</span></h2>
+                            <p class="font-text">Olá, gostaria de parabenizar-lo(a) pela sua escolha,<br/> será um prazer têlo(a) no meu time. <br/><br/> Sou Leticia Assunção nutricionista. Atuo como nutricionista<br/> esportiva a três anos, e ao longo desses anos já consegui <br/> ajudar mais de 1000 pacientes.<br/><br/><br/>Se alguém te perguntasse hoje: “qual a importância de um profissional de nutrição?”<br/> Você teria essa resposta na ponta da língua? 
+
+                                A grande maioria da população só nos conhece como profissionais de passar dieta e nada mais, mas sabemos muito bem que isso não é verdade, a nutrição tem um papel enorme em vários casos, o que torna essa profissão tão bonita e necessária. Você sabia que, de acordo com a última Pesquisa Nacional de Saúde feita pelo IBGE em 2013, apenas 37,3% das pessoas se enquadram no que recomenda a Organização Mundial da Saúde (OMS) e informaram consumir cinco porções diárias de frutas e hortaliças? Isso traz a tona uma realidade do país onde pessoas não estão preocupadas com os seus próprios hábitos, o que torna a nossa profissão cada vez mais necessária.
+                                
+                                Todos nós temos uma missão com o mundo e com nós mesmos, e os nichos fazem as pessoas enxergarem isso de uma maneira mais fácil. Ainda não sabe o que é nicho e como escolher</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="serviços" class="pt-5 pb-5">
+        <section id="servicos" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
                     <h2 class="text-center"><span class="text-color">Serviços</span></h2>
@@ -98,19 +103,19 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <img src="./img/area da consulta.jpg" class="d-block w-100 rounded mb-2" alt="espaço da consulta">
-                        <p>
+                        <p class="font-text">
                             oferecemos conforto entre as melhores práticas para sua recepção,a iluminação adequada pode fazer diferença para o bem-estar do paciente no local.
                         </p>
                     </div>
                     <div class="col-md-4">
                         <img src="./img/equipamentos.jpg" class="d-block w-100 rounded mb-2" alt="equipamentos">
-                        <p>
+                        <p class="font-text">
                             Por que utilizar equipamentos médicos novos? Otimização do tempo, segurança do paciente, Precisão e maior garantia nos resultados
                         </p>
                     </div>
                     <div class="col-md-4">
                         <img src="./img/acompanhamento de um psicologo.jpg" class="d-block w-100 rounded mb-2" alt="psicologo esportivo">
-                        <p>
+                        <p class="font-text">
                             O psicólogo alimentar é o melhor profissional para ajudar na construção ou mudança de hábitos alimentares.
                         </p>
                     </div>
@@ -127,7 +132,7 @@
                         <nav class="nav nav-pills flex-column nav-Procedimentos">
                             <button type="button" data-bs-toggle="tab" data-bs-target="#foco-no-seu-objetivo" class="fw-bold text-start nav-link active">Foco no seu objetivo</button>
                             <button type="button" data-bs-toggle="tab" data-bs-target="#acompanhamento" class="fw-bold text-start nav-link">Acompanhamento e ajuste de plano</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#Exames" class="fw-bold text-start nav-link text-colored">Exames,Estratégias e resultados</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#Exames" class="fw-bold text-start nav-link">Exames,Estratégias e resultados</button>
                             <button type="button" data-bs-toggle="tab" data-bs-target="#suplementos" class="fw-bold text-start nav-link">Suplementos e manipulados</button>
                             <button type="button" data-bs-toggle="tab" data-bs-target="#foco" class="fw-bold text-start nav-link">Foco no longo prazo</button>
                         </nav>
@@ -139,7 +144,7 @@
                                     <div class="col-md-10">
                                         <img class="d-block w-100" src="./img/hipertrofia-e-dieta.png" alt="Anamnese Nutricional">
                                         <h5 class="fw-bold mt-2">Foco no seu objetivo</h5>
-                                        <p>
+                                        <p class="font-text">
                                             Vamos traçar juntos as estratégias para você alcançar seus objetivos, com toda adaptação para sua rotina 
                                         </p>
                                     </div>
@@ -150,7 +155,7 @@
                                     <div class="col-md-10">
                                         <img class="d-block w-100" src="./img/acompanhamento.webp" alt="Acompanhamento e ajuste de plano">
                                         <h5 class="fw-bold mt-2">Acompanhamento e ajuste de plano</h5>
-                                        <p>
+                                        <p class="font-text">
                                             As dobras cutâneas são medidas para avaliação da gordura corporal, seus resultados são aplicativos em diversas fórmulas e protocolos para definição do percentual de gordura. Esse método de avaliação é conhecido como indireto
                                         </p>
                                     </div>
@@ -161,7 +166,7 @@
                                     <div class="col-md-10">
                                         <img class="d-block w-100" src="./img/exames.jpg" alt="Exames,Estratégias e resultados">
                                         <h5 class="fw-bold mt-2">Exames,Estratégias e resultados</h5>
-                                        <p>
+                                        <p class="font-text">
                                             Análise e acompanhamento dos seus exames clínicos e teremos o mapa de qualidade de vida, para você acompanhar sua evolução.
                                         </p>
                                     </div>
@@ -172,7 +177,7 @@
                                     <div class="col-md-10">
                                         <img class="d-block w-100" src="./img/suplementos.jpg" alt="Suplementos e manipulados">
                                         <h5 class="fw-bold mt-2">Suplementos e manipulados</h5>
-                                        <p>
+                                        <p class="font-text">
                                             Conforme necessidade, podemos incluir os manipulados e suplementação. Sempre utilizo evidências cientificas neste processo ea prioridade é um bom hábito alimentar.
                                         </p>
                                     </div>
@@ -183,7 +188,7 @@
                                     <div class="col-md-10">
                                         <img class="d-block w-100" src="./img/evolução.jpg" alt="Suplementos e manipulados">
                                         <h5 class="fw-bold mt-2">Foco no longo prazo</h5>
-                                        <p>
+                                        <p class="font-text">
                                             Sua saúde estará em primeiro plano, Não teremos restrições desnecessarias, nem dietas da moda, nem mesmo fórmula mágicas que não se sustentam a longo prazo. Sustentar seu resultado no longo prazo será prioridade.
                                         </p>
                                     </div>
@@ -191,6 +196,69 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="consulta" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center mb-5"><span class="text-color font-text2">Marque sua consulta aqui!</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold"><span class="text-color font-text2">Seu nome</span></label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="e-mail" class="form-label fw-bold"><span class="text-color font-text2">Seu e-mail</span></label>
+                                <input type="email" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold"><span class="text-color font-text2">Seu telefone</span></label>
+                                <input type="tel" id="nome" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold"><span class="text-color font-text2">Algum problema de saúde?</span></label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-titel fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <span class="text-color font-text2">Redes sociais</span>
+                            </h3>
+                            <ul class="social-link">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-titel fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                <span class="text-color font-text2">Endereço</span>
+                            </h3>
+                            <p>
+                                <span class="text-color font-text">Rua 35 Casa 120, Jose Walter - Fortaleza - CE</span>
+                            </p>
+                        </div>
                 </div>
             </div>
         </section>
